@@ -2,15 +2,15 @@ public class EvaluatorTester {
   public static void main(String[] args) {
     Evaluator evaluator = new Evaluator();
     String[] evaluate = {
-      "(6*3+8+3)",
-      "5-3-8",
-      "5+5*10/10",
-      "2^5",
-      "4^2",
-      "4+(1+2)",
-      "(1+3)+4",
-      "(5+2)+(4*9)*(2*2)^2",
-      "(((1+2)+3)+4)"
+      "(2*7+1+1)",
+      "8-2*7",
+      "10*10/4",
+      "8^9",
+      "10^1",
+      "8+(12*3)",
+      "(9/3)*6",
+      "(2+1)+(11*8)/(6*2)^0",
+      "(((7+1)+1)+1)"
     };
     for ( String arg : evaluate ) {
       System.out.format( "%s = %d\n", arg, evaluator.eval( arg ) );
